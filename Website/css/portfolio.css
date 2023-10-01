@@ -1,0 +1,12 @@
+img,
+iframe {
+  width: 100%;
+  margin-bottom: 40px;
+  image-orientation: from-image;
+}
+
+.bordered {
+  border-width: thick;
+  border-style: solid;
+  border-color: var(--color-bg-dark);
+}

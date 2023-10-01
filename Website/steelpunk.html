@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Joshua Fratis's Portfolio Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Joshua Fratis">
+    <title>Steelpunk</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/output.css">
+    <link rel="stylesheet" type="text/css" href="css/steelpunk.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar-responsive.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Teko">
+    <script src="js/inserter-navbar-responsive.js" type="text/javascript"></script>
+    <script src="js/inserter-footer.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/d7aece106b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="navbar">
+        <script>insertNavbar("steelpunk");</script>
+    </div>
+
+    <!-- TITLE -->
+    <div class="relative bg-no-repeat bg-cover bg-[left_40%_bottom_35%] min-h-screen"
+        style="background-image: url('img/games/sp/landing.jpg');">
+        <div class=" max-w-full p-8 grid gap-8 grid-cols-1 grid-rows-1 md:grid-cols-3">
+
+            <!-- TITLE -->
+            <div class="title-grid-element row-span-2 md:col-start-2 red" style="padding: 0 1.25rem;">
+                <h1 class=" min-w-fit pt-3 text-6xl md:text-8xl font-semibold tracking-wide center "
+                    style="font-family: 'Teko';">STEELPUNK</h1>
+            </div>
+
+            <!-- ANCHOR LINKS -->
+            <div class="max-h-fit title-grid-element row-span-2 md:col-start-1 md:row-start-2 dark">
+                <p class="font-semibold tracking-wide text-sm pb-1"> CONTENTS </p>
+                <ul class="p-0 list-disc list-inside text-base">
+                    <li class="p-0"><a href="#major-contributions">Major Contributions</a></li>
+                    <li class="p-0"><a href="#minor-contributions">Minor Contributions</a></li>
+                    <li class="p-0"><a href="#my-experience">My Experience</a></li>
+                </ul>
+                <p class="pt-2 pb-0"> See the <a href="https://github.com/JoshFratis/Portfolio">code</a>. </p>
+            </div>
+
+            <!-- PITCH -->
+            <div class="title-grid-element row-span-3 md:col-start-3 md:row-start-3 dark">
+                <p class="pb-2"> STEELPUNK is a cooperative roguelike first-person shooter about reclaiming the Earth
+                    from a planet-conquering manufacturing AI. </p>
+                <p class="pt-2"> Journey deep into subterranean dungeons constructed by the AI, collect rare materials
+                    from a bygone age of human civilization, and fight back the forces of the machine to restore
+                    humanity's hope in the mission to reclaim the Earth. </p>
+            </div>
+
+            <!-- BFG -->
+            <div class="title-grid-element row-span-1 md:col-start-3 md:row-start-6 dark">
+                <p class="pb-2"> Since January 2023, I've been a gameplay programmer on the team currently developing
+                    Steelpunk. </p>
+                <p class="py-2"> We are <a href="https://www.blastfurnacegames.com/" target="_blank"> Blast Furnace
+                        Games</a>, an independent game development studio originally spun out of Carnegie Mellon
+                    University's Game Creation Society</a>. </p>
+                <p class="pt-2"> I'm incredibly excited to be a part of the team and to share what we've accomplished!
+                </p>
+            </div>
+        </div> <a href="#major-contributions"><span
+                class="fixed right-4 bottom-4 h-16 w-16 rounded-full bg-red-600 z-50"> <img
+                    class="h-8 w-8 object-cover m-auto mt-4 z-50" src="img/icons/down-arrow-simple-double.png" alt="">
+            </span> </a>
+    </div>
+
+    <!-- MAJOR CONTRIBUIONS -->
+    <div id="major-contributions"
+        class=" max-w-full p-8  grid gap-8 grid-cols-1 grid-rows-1 lg:grid-cols-2 2xl:px-40 2xl:grid-cols-1"
+        style=" background-color: #0a090b; background-image: linear-gradient(#0a090b, #880415);">
+        <div class="grid-element 2xl:max-w-full 2xl:col-span-2">
+            <div class="2xl:flex">
+                <div class="2xl:shrink-0"> <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/EP86bSKgR7A?si=uAQCGFJZkwoxSAVL" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe> </div>
+                <div class="description">
+                    <div class="title"> Aerial Enemy 3D Pathfinding </div>
+                    <p> The <a target="_blank"
+                            href="https://github.com/JoshFratis/Portfolio/blob/main/Steelpunk/Enemies/Pathfinding/Pathfinder.cs">
+                            Pathfinder</a> is a component which can create a map of a 3D space, then use that map to
+                        find optimal unobstructed paths between any two points by performing an implementation of the A*
+                        algorithm. </p>
+                    <p> This is computationally expensive and required careful optimization. The algorithm utilizes
+                        time-efficient data structures such as priority queues, hashmaps, and multidimensional arrays.
+                        It also runs as a coroutine which distributes the operations across multiple frames. I'm
+                        currently working on utilizing Unity's multithreading Job System to increase performance even
+                        further. </p>
+                </div>
+            </div>
+        </div>
+        <div class="grid-element 2xl:max-w-full 2xl:col-span-2">
+            <div class="2xl:flex">
+                <div class="2xl:shrink-0"> <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/qS2wVwCngrc?si=iP6HSy9kv3mAJTBs" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe> </div>
+                <div class="description">
+                    <div class="title"> Aerial Enemy 3D Navigation </div>
+                    <p>The <a target="_blank"
+                            href="https://github.com/JoshFratis/Portfolio/blob/main/Steelpunk/Enemies/Pathfinding/Navigator.cs">
+                            Navigator</a> is the component responsible for safely requesting a path to a goal and
+                        translating the returned path into a single target vector by which a Controller component can
+                        simply navigate. It abstracts the series of coroutines and callbacks required to interface with
+                        the Pathfinder. </p>
+                    <p> This abstraction also allows Controllers to utilize the Navigator for numerous purposes. The Eye
+                        Enemy Controller uses it to regain line-of-sight on the player, while the Healer Enemy
+                        Controller uses it to navigate to an optimal position from which to repair damaged enemies. </p>
+                </div>
+            </div>
+        </div>
+        <div class="grid-element 2xl:max-w-full 2xl:col-span-2">
+            <div class="2xl:flex">
+                <div class="2xl:shrink-0"> <iframe width="560" height="325"
+                        src="https://www.youtube.com/embed/-rLk3Lh6fL8?si=l02_Gl-fkcIieVH6" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe> </div>
+                <div class="description">
+                    <div class="title"> Eye Enemy Behavior </div>
+                    <p> These <a target="_blank"
+                            href="https://github.com/JoshFratis/Portfolio/blob/main/Steelpunk/Enemies/EyeEnemyController.cs">
+                            Eye Enemies</a> pose an intelligent threat to the player. Upon losing a clear shot, they
+                        actively seek to <a href="https://www.youtube.com/watch?v=qS2wVwCngrc" target="_blank">regain
+                            line-of-sight</a> on the player. When targeted by the player, they dash out of the line of
+                        fire. They correct themselves when they fly too high or low. </p>
+                    <p> The enemy's eye color conveys information about it's current state. If it's green, it means it's
+                        hunting down the player. If it turns purple, it means it's avoiding the player's gaze. If its
+                        red, it means it has a clear shot and the player is in danger. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MINOR CONTRIBUTIONS -->
+    <div class="imgWindowContainer" style="background-image: url('img/games/sp/shaft.jpg'); height: 600px;"> </div>
+    <div id="minor-contributions"
+        class=" max-w-full p-8  grid gap-8 grid-cols-1 grid-rows-1 lg:grid-cols-2 2xl:px-40 2xl:grid-cols-2"
+        style=" background-color: #0a090b; background-image: linear-gradient(#0a090b, #880415);">
+        <div class=" grid-element 2xl:max-w-full">
+            <div class="2xl:flex">
+                <!-- <div class="2xl:shrink-0"> <iframe width="560" height="315" src="https://www.youtube.com/embed/qS2wVwCngrc?si=iP6HSy9kv3mAJTBs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </div> -->
+                <div class="description">
+                    <div class="title"> <a target="_blank"
+                            href="https://github.com/JoshFratis/Portfolio/blob/main/Steelpunk/GameState/RaidRoomManager.cs">
+                            Healer Enemy Assignment</a> </div>
+                    <p> Healers are small drones which repair all damaged enemies within range. </p>
+                    <p> Healers are assigned enemies to repair by a single Healer Manager. Assignments are coordinated
+                        such that together, they maximize the collective regeneration of all enemies in the room. </p>
+                    <p> This coordination is made challenging by a few key constraints. Healers should heal enemies that
+                        enter their range and stop healing those that leave it. Yet an enemy should never be healed by
+                        more than one healer at a time. </p>
+                    <p> The assignment algorithm and the logic that allows Healers to update their assignment on the fly
+                        interface with a shared dictionary of all the room's enemies and their states. This enables a
+                        coordination which maintains the illusion of intelligence. </p>
+                </div>
+            </div>
+        </div>
+        <div class=" grid-element 2xl:max-w-full">
+            <div class="2xl:flex">
+                <!-- <div class="2xl:shrink-0"> <iframe width="560" height="315" src="https://www.youtube.com/embed/qS2wVwCngrc?si=iP6HSy9kv3mAJTBs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </div> -->
+                <div class="description">
+                    <div class="title"> <a target="_blank"
+                            href="https://github.com/JoshFratis/Portfolio/blob/main/Steelpunk/Enemies/HealerEnemyController.cs">
+                            Healer Enemy Controller</a> </div>
+                    <p> The lifecycle of a healer is managed by a state machine. </p>
+                    <p> The unassigned healer requests an assignment from the Healer Manager, then calculates and
+                        navigates to an optimal position from which to execute their assignment. </p>
+                    <p> They then carry out their assignment, updating it as unassigned enemies enter and assigned
+                        enemies leave their range, until they once again are unassigned. </p>
+                    <p> Along the way, they constantly recalculate the optimal position from which to maximize enemy
+                        regeneration, repair damaged enemies, and perform an idle animation. </p>
+                </div>
+            </div>
+        </div>
+        <div class=" grid-element 2xl:max-w-full">
+            <div class="2xl:flex">
+                <!-- <div class="2xl:shrink-0"> <iframe width="560" height="325" src="https://www.youtube.com/embed/-rLk3Lh6fL8?si=l02_Gl-fkcIieVH6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </div> -->
+                <div class="description">
+                    <div class="title"> <a href="https://www.youtube.com/watch?v=YfuIqX7IlIU&t=2s"
+                            target="_blank">Procedural Level Generation Algorithm</a> </div>
+                    <p> The Procedural Level Generation Algorithm is capable of creating a branching map from a
+                        configured set of tile-based rooms. It randomly selects free doors, rooms to place adjecent to
+                        them, and orientations in which they fits the available space. </p>
+                    <p> By maintaining a graph of the generated level, the algorithm is capable of garunteeing a number
+                        of each room type within a set range, creating cycles between spawned paths at a set frequency,
+                        and manipulating the density of the final map. </p>
+                    <p> <a href="https://www.youtube.com/watch?v=YfuIqX7IlIU&t=2s" target="_blank">Click here</a> to see
+                        a full code walkthrough of the complete algorithm. </p>
+                </div>
+            </div>
+        </div>
+        <div class=" grid-element 2xl:max-w-full">
+            <div class="2xl:flex">
+                <!-- <div class="2xl:shrink-0"> <iframe width="560" height="315" src="https://www.youtube.com/embed/qS2wVwCngrc?si=iP6HSy9kv3mAJTBs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </div> -->
+                <div class="description">
+                    <div class="title"> <a target="_blank"
+                            href="https://github.com/JoshFratis/Portfolio/tree/main/Steelpunk/ScriptableObjects/Crafting">
+                            Crafting System </a> </div>
+                    <p> The Crafting System is an API which attaches to a player's inventory. Its primary function
+                        consumes ingredient items from the attached inventory and produces the corresponding craftable
+                        item. </p>
+                    <p> The Crafting System is fully integrated into the Inventory UI, allowing players to essentially
+                        interface with the API themselves. Recipes are configured in a global scriptable object and
+                        programatically rendered. </p>
+                </div>
+            </div>
+        </div>
+        <div class=" grid-element 2xl:max-w-full">
+            <div class="2xl:flex">
+                <!-- <div class="2xl:shrink-0"> <iframe width="560" height="325" src="https://www.youtube.com/embed/-rLk3Lh6fL8?si=l02_Gl-fkcIieVH6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </div> -->
+                <div class="description">
+                    <div class="title"> <a target="_blank"
+                            href="https://github.com/JoshFratis/Portfolio/blob/main/Steelpunk/Loot/Inventory.cs">
+                            Interchangeable Weapon Upgrade Items </a> </div>
+                    <p> Like any item, Weapon Upgrades are configured as scriptable objects (WUSOs). However, WUSOs
+                        specifically epose properties and functions which apply to the weapon to which the WUSO is
+                        attached. </p>
+                    <p> A WUSO can modify its weapon's base properties or execute code upon player actions such as
+                        equipping, firing, or hitting a target with the weapon. </p>
+                    <p> WUSOs are fully integrated into the Inventory UI, allowing players to attach any upgrade to any
+                        weapon at any time. </p>
+                </div>
+            </div>
+        </div>
+        <div class=" grid-element 2xl:max-w-full">
+            <div class="2xl:flex">
+                <!-- <div class="2xl:shrink-0"> <iframe width="560" height="325" src="https://www.youtube.com/embed/-rLk3Lh6fL8?si=l02_Gl-fkcIieVH6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </div> -->
+                <div class="description">
+                    <div class="title"> <a target="_blank"
+                            href="https://github.com/JoshFratis/Portfolio/tree/main/Steelpunk/AOEs"> Placeable Area of
+                            Effect Items </a> </div>
+                    <p> Placeable AoE items are consumables players can cast down on any surface within range. Once
+                        placed, the item creates a bubbly field that applies an effect to players or enemies inside it.
+                    </p>
+                    <p> The effect and its targets are entirely configurable via scriptable objects, allowing us to
+                        reuse effects implemented for single-target consumables and weapon damage payloads. </p>
+                </div>
+            </div>
+        </div>
+        <div class=" grid-element 2xl:max-w-full">
+            <div class="2xl:flex">
+                <!-- <div class="2xl:shrink-0"> <iframe width="560" height="325" src="https://www.youtube.com/embed/-rLk3Lh6fL8?si=l02_Gl-fkcIieVH6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </div> -->
+                <div class="description">
+                    <div class="title"> Movement Speed Modification System </div>
+                    <p> This system allows for the application of modifiers to a player's speed. This is currently
+                        utilized by a consumable item which temporarily increases the user's speed, but such a modifier
+                        could also be applied by equipment, a weapon, or an AoE. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- IMAGE WINDOW: BLUE ENEMIES -->
+    <div class="imgWindowContainer" style="background-image: url('img/games/sp/blueenemies.jpg'); height: 600px;">
+    </div>
+
+    <!-- MY EXPERIENCE -->
+    <div id="my-experience" class="fadeContainer"
+        style="background-color: #0a090b; background-image: linear-gradient(#880415, #0a090b);"> <!--EXPERIENCE-->
+        <div class="max-w-2xl wrapper px-8 pt-1 pb-14 mx-auto">
+            <div class="graph">
+                <h2 class="text-xl tracking-wide font-semibold mb-4"> My Experience </h2>
+                <h3>Working on a Team</h3>
+                <p> Working within a community of similarly inspired game developers is exciting each and every day.
+                    It's fulfilling and empowering not only to be doing the work I feel I'm meant to do, but to share
+                    that mission with friends. I can't wait to bring the game into the next stage of development and
+                    production. </p>
+            </div>
+            <div class="graph">
+                <h3>Sharpening my Skills</h3>
+                <p> The opportunity to solve problems in the Unity editor each and every day has given me the best
+                    practice I could ever have. I'm happy to be learning new practical skills and patterns in a hands-on
+                    environment. </p>
+                <p> On this project, I've solved problems I'd never be assigned in a classroom. Analyzing and optimizing
+                    the runtime complexity of algorithms I've written is far more compelling when a player's frame rate
+                    is at stake! </p>
+                <p> I've also practiced what may be my most valuable skill- understanding and building atop an existing
+                    codebase belonging to another developer. I'm now quite comfortable diving into an unfamiliar
+                    codebase and quickly coming up to speed in order to make meaningful contributions. </p>
+            </div>
+            <div class="graph">
+                <h3>Developing the Game</h3>
+                <p> I'm incredibly proud to have developed major features and systems that cleanly integrate with and
+                    support the rest of the project. </p>
+                <p> I find joy in adding layers of complexity and creativity to the game which improve the player
+                    experience. </p>
+                <p> I've discovered an excitement in developing tools and systems which enable the team to work at a
+                    higher level and bring their visions to life </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <script>insertFooter();</script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+:root {
+  --color-offwhite: rgb(244 244 245);
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+
+  background-color: #0a090b;
+
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: 18px;
+  color: var(--color-offwhite);
+}
+
+/* Title Grid Pattern */
+.title-grid-element {
+  overflow: hidden;
+  max-width: 32rem;
+  margin: 0 auto;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.title {
+  color: rgb(63 63 70);
+}
+
+/* LINKS */
+a {
+  text-decoration: underline;
+}
+
+a:link {
+  color: rgb(235, 65, 65);
+}
+
+a:visited {
+  color: rgb(180, 65, 65);
+}
+
+a:hover {
+  color: orange;
+}
+
+a:active {
+  color: orange;
+}
+
+/* a.blue:link {
+  color: rgb(50, 150, 209);
+}
+
+a.blue:visited {
+  color: rgb(50, 150, 209);
+}
+
+a.blue:hover {
+  color: rgb(125, 204, 237);
+}
+
+a.blue:active {
+  color: rgb(125, 204, 237);
+} */
+
+/* IMAGES */
+img {
+  max-width: 100%;
+  image-orientation: from-image;
+}
+
+/* VIDEO */
+.video {
+  border: thick solid white;
+  margin: auto;
+}
+
+.video-container {
+  text-align: center;
+}
+
+/* MISC */
+/* Themes */
+.dark {
+  color: var(--color-offwhite);
+  background-color: black;
+  border: thick solid var(--color-offwhite);
+}
+
+.red {
+  color: black;
+  background-color: brown;
+  border: thick solid black;
+}
+
+/* CONTAINERS */
+/* Blurb */
+.boxContainer {
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+}
+
+/* Main Body */
+.fadeContainer {
+  width: 100%;
+  padding: 0;
+}
+
+.imgWindowContainer {
+  height: 900px;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+/* Paragraph Container */
+.graph {
+  margin: 3rem 0;
+}
+
+.graph h3 {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem; /* 28px */
+  font-weight: 600;
+  letter-spacing: 0.025em;
+}
+
+.graph p {
+  margin-top: 0.5rem;
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem; /* 24px */
+  font-weight: 400;
+  letter-spacing: 0em;
+}
+
+/* COLORS
+    Landing Base: #103248
+    Landing Shadow: #172023
+    Landing Light White: #fff5df
+    Landing Light Peach: #ffb190 
+    Landing Light Orange: #ff5e3b
+    Landing Light Red: #c42126
+    Landing Light Maroon: #880415
+
+    Shaft Light Peach: #ffa259
+    Shaft Peach: #ff8043
+    Shaft Orange: #ff5a2b
+    Shaft Orange Red: #ed2e21
+    Shaft Red: #d31218
+    Shaft Black: #0a090b
+
+    Blue Shadow: #002a57
+    Blue Base: #147ec1
+    Blue Light: #eefafd
+    Blue Orange: #e7671e
+    Blue Brown: #802115 
+*/

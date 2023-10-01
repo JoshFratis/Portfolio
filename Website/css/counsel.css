@@ -1,0 +1,200 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 18px;
+    /*line-height: 1.5;*/
+    /*letter-spacing: -.67px;*/
+    color: white;
+    background-color: black;
+}
+
+/* Breadcrumbs */
+.breadcrumb {
+    position: absolute; 
+    color: black; 
+    font-size: 14px;
+}
+
+
+/* Containers */
+/* Title Containers, Position */
+.title {
+    position:absolute;
+
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.titlePositionUpper {
+    left: 50%;
+    top: 10%;
+}
+
+.titlePositionCenter {
+    left: 50%;
+    top: 50%;
+}
+
+.titlePositionLower {
+    top: 100%;
+    right: -10%;
+}
+
+.subtitlePositionLower {
+    top: 120%;
+    left: 30%; 
+}
+
+/* Paragraph Container */
+.graph {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+/* Main Body Container */
+.container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.fadeContainer {
+    width: 100%;
+    padding-top: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(white,black);
+}
+
+/* Box Container, Auto-Center, Themes */
+.boxContainer {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px; 
+}
+
+.center {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.dark {
+    color: white;
+    background-color: black;
+    border: thick solid white;
+}
+
+.light {
+    color: black;
+    background-color: white;
+    border: thick solid black;
+}
+
+/* Pseudo Double Border */
+.doubleBorder {
+    position: relative;
+    margin: 0 auto;
+    padding: 5px;
+
+    border: thick solid white;
+    background-color: rgb(203,55,233);
+}
+
+/* Columns */
+.column {
+    float: left;
+    max-width: 49%;
+    max-height: fit-content;
+}
+
+.row {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.row:after {
+    content: "";
+  display: table;
+  clear: both;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+} 
+
+/* Text */
+.container p {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* Lists */
+ul li {
+    padding: 10px 0px;
+}
+
+/* LINKS */
+a:link {
+    color: dodgerblue;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: lightgray;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: gold;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+
+/* Breadcrumb Links */
+.breadcrumb a:link {
+    color: dodgerblue;
+  }
+  
+  /* visited link */
+.breadcrumb a:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+.breadcrumb a:hover {
+    color: gold;
+  }
+  
+/* selected link */
+  a:active {
+    color: blue;
+  }
+
+/* IMAGE */
+img {
+    max-width: 100%;
+    image-orientation: from-image;
+}
+
+.imgBorder {
+    border: thick solid white;
+}
+
+.imgMargin {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+
+
+

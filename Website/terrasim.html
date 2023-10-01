@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Joshua Fratis's Portfolio Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Joshua Fratis">
+    <title>TerraSim</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" type="text/css" href="css/links.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/terrasim.css">
+    <link rel="stylesheet" type="text/css" href="css/output.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar-responsive.css">
+    <script src="js/inserter-navbar-responsive.js" type="text/javascript"></script>
+    <script src="js/inserter-footer.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/d7aece106b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="navbar">
+        <script>insertNavbar("terrasim");</script>
+    </div>
+
+    <div class="grid gap-12 p-12 pb-28 
+        grid-rows-1 grid-cols-1
+        lg:grid-cols-2 
+        2xl:grid-cols-1">
+
+        <!-- INTRO -->
+        <div class="grid-element lg:col-span-2 2xl:col-span-1 2xl:max-w-2xl">
+            <div class="h-36 bg-no-repeat"
+                style="background-image: url(img/ts/logo.jpg); background-size: 100%; background-position-y: 75%;">
+            </div>
+            <div class="grid grid-cols-1 grid-rows-1 2xl:grid-cols-2">
+                <div class="2xl:flex row-span-1 col-span-1">
+                    <div class="description pb-0 2xl:pb-8">
+                        <p>For the summer of 2023, I held the position of an Application Engineer Intern at TerraSim, a
+                            subsidiary of Bohemia Interactive Simulations. I worked specifically on the front end and
+                            user experience of Mantle ETM, a terrain management platform and service oriented
+                            architecture. </p>
+                        <p>In my time at TerraSim, I gained valuable experience with advanced front-end scripting,
+                            version control systems, and a service oriented architecture which interconnects a multitude
+                            of products. </p>
+                    </div>
+                </div>
+                <div class="2xl:flex row-span-1 col-span-1">
+                    <div class="description pt-2 2xl:pt-8">
+                        <p>I learned first-hand the ins and outs of production, communication, and responsibility in the
+                            software industry. When introduced to a new and unfamiliar codebase, I quickly come up to
+                            speed in order to immediately ship meaningful contributions. </p>
+                        <p>Continue scrolling to see examples of my work! <a href="#3d-tiles-lighting"><span
+                                    class="hidden lg:block float-right h-16 w-16 m-4 2xl:m-0 z-50 rounded-full"
+                                    style="background-color: #76c1e9;">
+                                    <img class="h-8 w-8 object-cover m-auto mt-4 z-50"
+                                        src="img/icons/down-arrow-blocked.png" alt="">
+                                </span>
+                            </a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2843: 3D Tiles Lighting -->
+        <div id="3d-tiles-lighting" class="grid-element">
+            <div>
+                <div class="description">
+                    <p class="title">3D Tile Lighting: Problem</p>
+                    <p> This 3D Tilemap is lit realistically. The sun's position is determined by the real time of day.
+                        Before I developed a fix, I always saw the sun shining on Pittsburgh, but the other side would
+                        be dark. This posed a problem for customers simulating locations overseas. </p>
+                </div>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/L4qrDjRXy9Y?si=hXFFugE6my4FUnWH"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-element">
+            <div>
+                <div class="video-container"> <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/l_AWgEcH_4s?si=vxvyL9LCVpGUzhi1" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe> </div>
+                <div class="description">
+                    <p class="title">3D Tile Lighting: Solution</p>
+                    <p> I iterated across multiple solutions. Manipulating the simulated time of day to reposition the
+                        sun behind the camera resulted in a stuttering background and unlit poles. Aligning a
+                        directional light with the camera's position was an improvement, but did not light areas viewed
+                        at an angle. </p>
+                    <p> I settled on a solution which calculates a vector to light the global position at the center of
+                        the camera view. </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2870: Borders & Labels Overlay -->
+        <div class="grid-element">
+            <div>
+                <div class="description">
+                    <p class="title">Data Overlays</p>
+                    <p> I added "Overlays" to the Mantle ETM UI, semi-transparent imagery layers based on GeoServer
+                        WebMapService data, allowing users to view their terrain with whichever data is most relevant to
+                        them at any given time. Overlays are easily toggleable via this dropdown checkbox menu. </p>
+                    <p> Overlays were a long-time UI goal at TerraSim and significantly contributed to the Mantle ETM
+                        product. See more Overlays I developed below. </p>
+                </div>
+                <div class="video-container"> <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/5yWjj-GUZUM?si=LSrgAMeHxB04vOkW" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe> </div>
+            </div>
+        </div>
+
+        <div class="grid-element">
+            <div>
+                <div class="video-container"> <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/NBNIcHJP0yM?si=uFZJJ88hC91IfwSm" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe> </div>
+                <div class="description">
+                    <p class="title">Borders and Labels Overlay</p>
+                    <p> "Borders and Labels" is an Overlay which includes country borders and labels for
+                        countries, capitals, and cities. Presenting this raw data as intuitively and clearly readable to
+                        a user at all scales was a challenging process that required me to learn Style Layer
+                        Descriptor XML. </p>
+                    <p> I developed the WMS to Overlay pipeline in such a way that anyone can easily configure new
+                        Overlays without delving into the details. I thuroughly documented
+                        what simple steps remain before departing. </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2932: Map Extents Filter -->
+        <div class="grid-element">
+            <div>
+                <div class="description">
+                    <p class="title">Map Extents Inset Filter</p>
+                    <p> I developed this toggleable filter which lists on the left only the insets which are in view on
+                        the right. This enables customers with massive datasets to more clearly understand and
+                        manipulate their terrain. </p>
+                </div>
+                <div class="video-container"> <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/hEY4z3bpzLQ?si=8DRO_nhHgkwSlYiU" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe> </div>
+            </div>
+        </div>
+
+        <!-- 2998: Update Inset Appearance -->
+        <div class="grid-element">
+            <div>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ziDm6wifGkk?si=iGHzBNNOGC_nB3Sm"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="description">
+                    <p class="title">Updated Labels and Clusters</p>
+                    <p>
+                        I updated the appearance of the inset labels such that they now mesh seamlessly with the UI and
+                        match the styling of the Overlays I developed. I worked extensively with the product owner on
+                        multiple iterations. At thier request, I conducted user testing among members of the company to
+                        discover the optimal design.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="grid-element">
+            <div>
+                <div class="description">
+                    <p class="title">Updated Labels and Clusters</p>
+                    <p>
+                        I also developed a label-clustering feature with the goal of eliminating overlapping text. This
+                        again matches the styled behavior of the Overlays and marks a great improvement in the overall
+                        presentation of the Mantle ETM UI. You can compare the updated appearance to the previous
+                        appearance as it's shown in other demos.
+                    </p>
+                </div>
+                <div class="video-container">
+                    <img class="h-48 w-full object-cover md:h-full" src="img/ts/2998-cropped.jpg"
+                        alt="Updated Inset Labels">
+                </div>
+            </div>
+        </div>
+
+        <!-- 2944: Graticule Overlay -->
+        <div class="grid-element">
+            <div>
+                <div class="video-container"> <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/8WSQYmq95Fk?si=mW19sXQlCLzn6f95" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe> </div>
+                <div class="description">
+                    <p class="title">Graticule Overlay</p>
+                    <p> This is another Overlay rendering the parallels and meridians of the geographic coordinate
+                        system. Each is labeled by its degree. It also includes named parallels and meridians. The
+                        graticule scales as the user zooms in and out, consistently rendering the data clearly. </p>
+                    <p> This dataset enabled users essential geographic positioning capabilities. </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2933: MGRS Overlay -->
+        <div class="grid-element">
+            <div>
+                <div class="description">
+                    <p class="title">MGRS Overlay</p>
+                    <p> This Overlay renders the Military Grid Reference System, a geocoordinate standard used by NATO
+                        militaries for locating points on Earth, onto the Mantle ETM UI. The MGRS contains multiple
+                        levels of detail which are selectively rendered according to the user's view. </p>
+                    <p> While this data was especially dense, requiring extra effort to compile and style, it was highly
+                        requested by users. </p>
+                </div>
+                <div class="video-container"> <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/zTJFGoZsAcg?si=6vjGZgQWWbTEfqlO" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    </video> </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <script>insertFooter();</script>
+    </div>
+</body>

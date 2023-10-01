@@ -1,0 +1,31 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    letter-spacing: -.67px;
+    color: white;
+    background-color: black;
+}
+
+/* Links */
+a:link {
+    color: dodgerblue;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: lightgray;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: gold;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }

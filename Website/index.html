@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Joshua Fratis's Portfolio Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Joshua Fratis">
+    <title>Home</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" type="text/css" href="css/links.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/output.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar-responsive.css">
+    <script src="js/inserter-navbar-responsive.js" type="text/javascript"></script>
+    <script src="js/inserter-footer.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/d7aece106b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="navbar">
+        <script>insertNavbar("home");</script>
+    </div>
+
+    <div class="max-w-full p-4 px-8 grid grid-cols-1 grid-rows-1 lg:grid-cols-4 gap-8">
+
+        <!-- PROFILE -->
+        <div class="grid-element md:col-span-2">
+            <div class="md:flex">
+                <div class="md:shrink-0">
+                    <img class="pfp" src="img/pfp/pfp_2023_1-1.jpeg" alt="Joshua Fratis Profile Picture">
+                </div>
+                <div class="description">
+                    <div class="title">Hi! My name is Josh.</div>
+                    <p>
+                        I'm a game developer currently
+                        studying Computer Science and Digital Narrative & Interactive Design
+                        at the University of Pittsburgh.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- STEELPUNK -->
+        <div class="grid-element 
+            md:row-span-2 md:col-span-2">
+            <div class="max-w-full">
+                <div class="h-64 bg-bottom" style="
+                        background-image: url(img/games/sp/shaft.jpg); 
+                        background-size: 100%;">
+                </div>
+                <div class="description block">
+                    <p>
+                        <a class="title" href="steelpunk.html" target="_blank">STEELPUNK</a> is an MMO FPS
+                        (massively-multiplayer online first-person
+                        shooter)
+                        about reclaiming the Earth from a planet-conquering artificial intelligence.
+                    </p>
+
+                    <p>
+                        As a co-founder and gameplay programmer at
+                        <a class="title" href="https://www.blastfurnacegames.com/" target="_blank">BLAST FURNACE
+                            GAMES</a>,
+                        I'm leading the development of Steelpunk alongside
+                        a small team of inspired developers spun out of
+                        Carnegie Mellon University's Game Creation Society.
+                    </p>
+
+                    <p>
+                        We utilize rollback netcode and lag compensation to maximize performance and
+                        reduce latency to deliver an exceptional networked multiplayer experience.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- TERRASIM -->
+        <div class="grid-element md:row-span-2">
+            <div class="max-w-full">
+                <div class="h-20 bg-no-repeat" style="background-image: url(img/ts/logo.jpg); background-size: 100%;">
+                </div>
+                <div class="description">
+                    <p>
+                        As an Application Engineer Intern at
+                        <a class="title" href="terrasim.html" target="_blank">TerraSim</a>,
+                        I shipped contributions to <a class="title"
+                            href="https://bisimulations.com/products/mantle-etm">Mantle ETM</a>, a simulated terrain
+                        creation
+                        pipeline and management platform
+                        supporting <a class="title" href="https://bisimulations.com/products/vbs4">VBS4</a>,
+                        real-time 3D combat simulation game engine.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- GAMES -->
+        <div class="grid-element">
+            <div class="max-w-full">
+                <div
+                    style="background-image: url(img/games/tcitc/shiloh.jpeg); background-size: 150%; background-position: 50% 65%; height: 8rem;">
+                </div>
+                <div class="description">
+                    <p>
+                        Feel free to check out <a class="title" href="counsel.html">The
+                            Counsel in The Cave</a> or any of my other <a class="title" href="portfolio.html">games!</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <script>insertFooter();</script>
+    </div>
+</body>
+
+</html>

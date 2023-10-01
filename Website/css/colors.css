@@ -1,0 +1,78 @@
+:root {
+  --main-bg-color: #fdf0d5; /* <-- warm */
+
+  --color-bg-light: #edf2f4; /* <-- cool */
+  --color-bg-dark: #2b2d42;
+  --color-link: #d90429;
+  --color-link-active: #ef233c;
+  --color-link-visited: #8d99ae;
+
+  --color-bg-light: #dfe0dc; /* cool darker */
+  --color-link: #d7263d; /* <-- */
+
+  --color-bg-light: #f8f7f9; /* cool lighter */
+  --color-link-active: #da3e52;
+
+  /* ----------------------------------------------------- */
+
+  /* Sea & Sky v/ */
+  --color-bg-light: #edf2f4; /* maybe make this a little less intense */
+  --color-bg-light: #dcdfe0; /* less intense version */
+  --color-bg-light: #dcdfe0;
+  --color-bg-dark: #323031;
+  --color-text-light: #edf2f4;
+  --color-text-dark: #323031;
+  --color-link: #b3b7ee;
+  --color-link: #7353ba;
+  --color-link: #5da9e9;
+  --color-link: #2191fb; /* maybe make this a little less intense */
+  --color-link: #329bfd; /* less intense version */
+  --color-link-active: #f7b32b;
+  --color-link-visited: #0cbaba;
+
+  /* Plain Air v/ */
+  --color-bg-light: #edf2f4;
+  --color-bg-dark: #323031;
+  --color-text-light: #edf2f4;
+  --color-text-dark: #323031;
+  --color-link: #db3a34;
+  --color-link-active: #ffc857;
+  --color-link-visited: #177e89; /* maybe make this a little brighter / sky/dodger-blue-r */
+
+  /* Fantasy Camping X */
+  --color-bg-light: #efe6dd;
+  --color-bg-dark: #231f20;
+  --color-text-light: #efe6dd;
+  --color-text-dark: #231f20;
+  --color-link: #bb4430;
+  --color-link-active: #f3dfa2; /* too light */
+  --color-link-visited: #7ebdc2;
+
+  /* Near-Future Haze / Pokemon v/? */
+  /* I kinda like the colored bg-dark, as it's only used for the navar. 
+  Would require overrides for SP / TCITC, as it doesn't mesh. */
+  --color-bg-light: #fdf0d5;
+  --color-bg-dark: #3d405b; /* something between these two */
+  --color-bg-dark: #1d3557;
+  --color-text-light: #fdf0d5;
+  --color-text-dark: #1d3557;
+  --color-link: #e63946; /* something between these two */
+  --color-link: #e07a5f;
+  --color-link-active: #f2cc8f; /* these would be great in a dark theme */
+  --color-link-visited: #81b29a;
+
+  /* Gemstone v/ */
+  /* I like the idea of the active navbar section being the link-active color, but that could be confusing / read as bad design */
+  --color-bg-light: #fffcf9;
+  --color-bg-dark: #222222;
+  --color-text-light: #fffcf9;
+  --color-text-dark: #222222;
+  --color-link: #ef476f;
+  --color-link: #ff595e;
+  --color-link-active: #06d6a0;
+  --color-link-active: #ffd166;
+  --color-link-visited: #6a4c93;
+  --color-link-visited: #1982c4;
+
+  /* ----------------------------------------------------- */
+}

@@ -1,0 +1,60 @@
+:root {
+  --mantle-lime-color: #7fbd31;
+  --mantle-forest-color: #4f673c;
+  --mantle-teal-color: #2f3b40;
+  --mantle-deep-color: #1c2426;
+  --deep-sea-color: #32578b;
+  --coastal-color: #456ea9;
+  --ice-color: #e0e3e8;
+  --plains-color: #778585;
+  --forest-color: #617482;
+}
+
+html,
+body {
+  background-color: var(--mantle-teal-color);
+  background-image: linear-gradient(
+    var(--mantle-teal-color),
+    var(var(--mantle-deep-color))
+  );
+}
+
+/* .grid-container > div { */
+.grid-element {
+  @media (min-width: 1536px) {
+    max-width: 72rem;
+  }
+}
+
+.grid-element > div {
+  @media (min-width: 1536px) {
+    display: flex;
+  }
+}
+
+.video-container {
+  @media (min-width: 1536px) {
+    flex-shrink: 0;
+  }
+}
+
+.video-container > img {
+  @media (min-width: 1536px) {
+    width: 640px;
+  }
+}
+
+.description > p:not(.title) {
+  color: var(--mantle-teal-color);
+}
+
+.title {
+  text-transform: uppercase;
+  color: var(--mantle-lime-color);
+}
+
+.description:first-child {
+}
+
+.description:last-child {
+}
